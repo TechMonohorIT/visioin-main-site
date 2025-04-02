@@ -1,0 +1,669 @@
+.custom-choose-content {
+  background-color: red !important;
+  width: 100% !important;
+}
+.why-choose-section-1 {
+  /* padding: 40px 80px; */
+  background-image: url("/images/LIGHT_SHADE_2.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.why-choose-section-2 {
+  height: 100%;
+  /* background-color:red; */
+  background-image: url("/images/VISION_LOGO_BACK.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inner-content {
+  height: 100%;
+}
+.custom-why-choose-us {
+  padding-top: 20px !important;
+  position: relative;
+  overflow: hidden;
+
+  /* transform: scale(1.1); */
+}
+
+.custom-why-choose-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 100vh;
+  background-image: url("/images//LIGHT_SHADE_2.png"),
+    url("/images/VISION_LOGO_BACK.png");
+
+  background-size: cover, cover;
+  background-position: left, center, right, center;
+  background-attachment: fixed;
+
+  /* background-position: left top, right top; */
+  /* Prevent the images from repeating */
+  background-repeat: no-repeat, no-repeat;
+  filter: blur(1px); /* Adjust the blur radius as needed */
+  /* Prevents visible edges from the blur */
+  z-index: -2;
+}
+.custom-why-choose-us::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.1; /* Adjust opacity to control color intensity */
+  z-index: -1;
+  inset: 0;
+}
+
+.why-choose-images-user {
+  display: flex;
+  justify-content: end;
+  /* height: 100%;; */
+  background-color: red;
+  position: relative;
+}
+.why-choose-img-box-1 {
+  display: flex;
+  justify-content: center;
+}
+.why-choose-img-box-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.why-images-1 {
+  position: relative;
+}
+.why-images-2 {
+  position: absolute;
+  top: 10;
+  left: 50;
+  right: 50;
+}
+.our-project-user {
+  position: relative;
+  overflow: hidden; /* Ensure pseudo-elements don’t extend outside */
+}
+
+/* Blurred background image */
+.our-project-user::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/empty-modern-apartment-illuminated-by-sunlight-shadows-generated-by-ai.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(1px); /* Adjust the blur radius as needed */
+  transform: scale(1.1); /* Prevents visible edges from the blur */
+  z-index: -2;
+}
+
+/* Color overlay using #55463e */
+.our-project-user::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #53473d;
+  opacity: 0.9; /* Adjust opacity to control color intensity */
+  z-index: -1;
+  inset: 0;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.navigation a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: all 0.4s ease;
+  position: relative;
+  opacity: 0.7;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.navigation a:hover::after,
+.navigation a.active::after {
+  width: 100%;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  opacity: 1;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 4rem 0;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.swiper-slide-active {
+  transform: scale(1.4);
+  z-index: 2;
+  opacity: 1;
+  filter: blur(0);
+}
+
+.swiper-slide-active h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.main-footer-user {
+  padding-top: 200px;
+
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.main-footer-user::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/photorealistic.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px); /* Adjust the blur radius as needed */
+  transform: scale(1.1); /* Prevents visible edges from the blur */
+  z-index: -2;
+}
+.main-footer-user::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6e5f51;
+  opacity: 0.9; /* Adjust opacity to control color intensity */
+  z-index: -1;
+  inset: 0;
+}
+
+/* **********************************
+/***     06. Why Choose Us css    ***/
+/************************************/
+.why-choose-us {
+  padding: 10px 0;
+  /* background-image: url("/images/light-shade-one.png"); */
+  /* background-color: var(--error-color);  */
+}
+
+.why-choose-item {
+  display: flex;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid var(--divider-color);
+	margin-bottom: 20px;
+	padding-bottom: 20px; */
+}
+
+.why-choose-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* .why-choose-item .icon-box{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: var(--divider-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	transition: all 0.4s ease-in-out;
+} */
+
+/* .why-choose-item:hover .icon-box{
+	background-color: transparent;
+} */
+
+/* .why-choose-item .icon-box::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	transition: all 0.3s ease-in-out;
+} */
+
+/* .why-choose-item:hover .icon-box::before{
+	background-color: #8B5E3B; 
+	transform: scale(1);
+} */
+
+/* .why-choose-item .icon-box img{
+	max-width: 24px;
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+} */
+
+/* .why-choose-item:hover .icon-box img{
+	filter: brightness(0) invert(1);
+} */
+
+.why-choose-item-content {
+  width: calc(100% - 80px);
+}
+
+.why-choose-item-content h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #8b5e3b !important;
+}
+
+.why-choose-us p {
+  color: var(--primary-color);
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  letter-spacing: 1px;
+}
+
+.why-choose-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+.why-choose-img-box {
+  display: relative !important;
+
+  width: 100%;
+}
+
+.why-choose-img-1 figure,
+.why-choose-img-2 figure {
+  display: block;
+}
+
+.why-choose-img-1 {
+  z-index: 10;
+  position: absolute;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Optional if you also want to center horizontally */
+  transform: translate(-50%, -50%);
+
+  border: 2px solid white;
+  top: 40px;
+}
+
+.why-container {
+  background: white;
+  position: relative;
+}
+.why-choose-img-1 img {
+  width: 100%;
+  aspect-ratio: 1 / 0.756;
+  object-fit: cover;
+  height: 32rem;
+}
+
+.why-choose-img-2 {
+  /* opacity: 0.8 !important; */
+  position: relative;
+}
+.why-choose-img-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #513f35; /* Adjust the opacity as needed */
+  opacity: 0.9;
+  filter: blur(1px);
+}
+.why-choose-img-2 img {
+  height: 25rem;
+}
+
+.why-choose-img-2 img {
+  width: 100%;
+  aspect-ratio: 1 / 1.01;
+  object-fit: cover;
+}
+.why-choose-content .section-title h2,
+.why-choose-content .section-title span {
+  font-size: 2.5rem !important;
+  color: #8b5e3b !important;
+}
+.section-title p {
+  color: var(--primary-color);
+}
+.experience-p {
+  color: #8b5e3b !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/************************************/
+/***     07. Our Services css     ***/
+/************************************/
+.our-services {
+  padding: 100px 0;
+}
+
+.our-services .section-title h3::before {
+  content: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.our-services .section-title h3 {
+  font-family: "Carmen Sans", sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  padding-left: 0px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  text-transform: capitalize;
+  color: var(--accent-color);
+}
+.our-services .section-title h2,
+.our-services .section-title span {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  text-transform: capitalize;
+  color: #8b5e3b !important;
+}
+.our-services .section-title-content {
+  margin-left: 110px;
+}
+.our-services .section-title-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+.service-item {
+  position: relative;
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+}
+
+.service-image a {
+  display: block;
+  cursor: none;
+}
+
+.service-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 1;
+}
+
+.service-btn a {
+  background-color: var(--accent-color);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-btn a:hover {
+  background-color: var(--primary-color);
+}
+
+.service-btn a img {
+  max-width: 20px;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.service-btn a:hover img {
+  transform: rotate(0);
+}
+
+.all-services-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.services-image-section {
+  background: url("/vision-site-main/images/photorealistic-timber-house-interior-with-wooden-decor-furnishings\ \(2\).jpg")
+    no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 2rem;
+  /* filter: grayscale(20%) sepia(36%) hue-rotate(202deg);*/
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  border-left: 5px solid var(--divider-color);
+}
+.service-box h3 {
+  margin-bottom: 100px;
+}
+.service-box a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: var(--default-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Our project section start to here */
+.our-project {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  background-image: url("/vision-site-main/images/modern-living-room-interior-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 1.5;
+}
+.our-project-hero {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.our-project-heading h2 {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+.our-project-heading h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6em;
+  color: var(--white-color);
+}
+.our-project-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+.our-project-content p {
+  color: var(--white-color);
+  font-size: clamp(6px, 5vw, 16px);
+  margin-top: 2rem;
+  width: 500px;
+  height: 200px;
+}
+.vision {
+  background: var(--white-color);
+  color: #8b5e3b !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-height: 100%;
+  padding: 3rem 2rem 0rem 2rem;
+  margin-top: 7rem;
+  gap: 15px;
+}
+.vision h3 {
+  color: #8b5e3b !important;
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
+  font-weight: 600;
+}
+.vision-1,
+.vision-2,
+.vision-3,
+.vision-4 {
+  position: relative;
+  text-align: center;
+  height: 15vw;
+}
+.vision-1 img,
+.vision-2 img,
+.vision-3 img,
+.vision-4 img {
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.vision-1 p,
+.vision-2 p,
+.vision-3 p,
+.vision-4 p {
+  text-align: left;
+  margin-top: 1rem;
+}
+.vision-1 h3,
+.vision-2 h3,
+.vision-3 h3,
+.vision-4 h3 {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+/* Start responsive design to here
+   .........MOBILE RWD........... 
+   its mobile screen (max-width:450px)*/
+@media only screen and (max-width: 450px) {
+  .why-choose-img-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .why-choose-img-1 figure,
+  .why-choose-img-2 figure {
+    display: block;
+  }
+  .why-container {
+    background: white;
+    position: relative;
+  }
+  .why-choose-img-1 {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Optional if you also want to center horizontally */
+    transform: translate(-50%, -50%);
+
+    border: 2px solid white;
+  }
+
+  .why-choose-img-1 img {
+    width: 100%;
+    height: 30vw;
+  }
+
+  .why-choose-img-2 {
+    opacity: 0.2 !important;
+    width: calc(62% - 10%);
+  }
+  .why-choose-img-2 img {
+    height: 30vw;
+  }
+
+  /* INSPIRING DESIGNS = our-project section responsive design */
+}
+
+/* its tablet screen (max-width:750px)
+  ..........Tablet RWD..................
+  .........................*/
+@media only screen and (max-width: 750px) {
+  /* INSPIRING DESIGNS = our-project section responsive design */
+}
