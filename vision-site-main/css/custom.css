@@ -2138,17 +2138,6 @@ header.main-header .header-sticky.active .navbar{
 	color: var(--primary-color);
 }
 
-.footer-copyright{
-	border-top: 1px solid var(--dark-divider-color);
-	text-align: center;
-	margin-top: 65px;
-	padding: 40px 0;
-}
-
-.footer-copyright-text p{
-	color: var(--white-color);
-	margin: 0;
-}
 
 /************************************/
 /***     15. About Us Page css 	  ***/
@@ -3942,11 +3931,6 @@ header.main-header .header-sticky.active .navbar{
 		margin-bottom: 20px;
 	}
 
-	.footer-copyright{
-		margin-top: 0px;
-		padding: 20px 0;
-	}
-
 	.page-header{
         padding: 180px 0 100px;
         margin-top: -92px;
@@ -4550,9 +4534,7 @@ header.main-header .header-sticky.active .navbar{
 		margin-bottom: 5px;
 	}
 	
-	.footer-copyright{
-		padding: 15px 0;
-	}
+
 
 	.page-header-box h1{
 		font-size: 28px;

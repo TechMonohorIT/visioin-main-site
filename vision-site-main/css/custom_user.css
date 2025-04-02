@@ -201,40 +201,7 @@
   z-index: 1;
 }
 
-.main-footer-user {
-  padding-top: 200px;
 
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-.main-footer-user::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/photorealistic.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(1px); /* Adjust the blur radius as needed */
-  transform: scale(1.1); /* Prevents visible edges from the blur */
-  z-index: -2;
-}
-.main-footer-user::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #6e5f51;
-  opacity: 0.9; /* Adjust opacity to control color intensity */
-  z-index: -1;
-  inset: 0;
-}
 
 /* **********************************
 /***     06. Why Choose Us css    ***/
@@ -615,6 +582,56 @@
   text-align: left;
   margin-top: 1rem;
 }
+
+
+/*************************************/
+/*****  8.Footer Section Csss   ******/
+/*************************************/
+.main-footer-user {
+  padding-top: 200px;
+  /* height: 100vh; */
+  position: relative;
+  overflow: hidden;
+}
+.main-footer-user::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/photorealistic.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px); /* Adjust the blur radius as needed */
+  transform: scale(1.1); /* Prevents visible edges from the blur */
+  z-index: -2;
+}
+.main-footer-user::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6e5f51;
+  opacity: 0.9; /* Adjust opacity to control color intensity */
+  z-index: -1;
+  inset: 0;
+}
+.copyright-home-footer{
+	text-align: center;
+  padding-top: 30px;
+  font-size: 1rem;
+}
+
+.copyright-home-footer p{
+	color: var(--white-color);
+}
+
+
+
 
 /* Start responsive design to here
    .........MOBILE RWD........... 
