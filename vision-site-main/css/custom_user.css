@@ -1,3 +1,19 @@
+/************************************/
+/***     06. Header   ***************/
+/************************************/
+.header-turtle{
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: red;
+  display: flex;
+  justify-content: center;
+  padding: calc(1% - 1px) 0px;
+  color: #000000;
+}
+
+
+/************************************/
+/***     06. Why Choose Us css    ***/
+/************************************/
 .custom-choose-content {
   background-color: red !important;
   width: 100% !important;
@@ -585,7 +601,7 @@
 
 
 /*************************************/
-/*****  8.Footer Section Csss   ******/
+/*****  8.Footer Section Css   ******/
 /*************************************/
 .main-footer-user {
   padding-top: 200px;
@@ -632,55 +648,18 @@
 
 
 
-
-/* Start responsive design to here
-   .........MOBILE RWD........... 
-   its mobile screen (max-width:450px)*/
-@media only screen and (max-width: 450px) {
-  .why-choose-img-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .why-choose-img-1 figure,
-  .why-choose-img-2 figure {
-    display: block;
-  }
-  .why-container {
-    background: white;
-    position: relative;
-  }
-  .why-choose-img-1 {
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Optional if you also want to center horizontally */
-    transform: translate(-50%, -50%);
-
-    border: 2px solid white;
-  }
-
-  .why-choose-img-1 img {
-    width: 100%;
-    height: 30vw;
-  }
-
-  .why-choose-img-2 {
-    opacity: 0.2 !important;
-    width: calc(62% - 10%);
-  }
-  .why-choose-img-2 img {
-    height: 30vw;
-  }
-
-  /* INSPIRING DESIGNS = our-project section responsive design */
+/*************************************/
+/***9.MOBILE  RESPONSIVE WEB DESIGN ***/
+/*************************************/
+@media only screen and (max-width: 600px) {
+ 
 }
 
-/* its tablet screen (max-width:750px)
-  ..........Tablet RWD..................
-  .........................*/
-@media only screen and (max-width: 750px) {
-  /* INSPIRING DESIGNS = our-project section responsive design */
+/*************************************/
+/***.Tablet  RESPONSIVE WEB DESIGN ***/
+/*************************************/
+@media only screen and (max-width: 768px) {
+
 }
+
+

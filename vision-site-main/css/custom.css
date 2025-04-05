@@ -3624,7 +3624,7 @@ header.main-header .header-sticky.active .navbar{
 /***      26. Responsive css      ***/
 /************************************/
 
-@media only screen and (max-width: 1366px){
+/* @media only screen and (max-width: 1366px){
 	
 	.our-testimonial-content{
 		padding: 100px 50px;
@@ -3677,7 +3677,7 @@ header.main-header .header-sticky.active .navbar{
 
 	.section-title-content{
 		margin-left: 0;
-		/* margin-top: 15px; */
+		/* margin-top: 15px; 
 	}
 
 	.section-btn{
@@ -3751,11 +3751,11 @@ header.main-header .header-sticky.active .navbar{
 	}
 
 	.why-choose-us{
-		/* padding: 50px 0; */
+		/* padding: 50px 0; 
 	}
 
 	.why-choose-content{
-			/* margin-bottom: 30px; */
+			margin-bottom: 30px; 
 	}
 
 	.why-choose-item .icon-box{
@@ -4515,7 +4515,7 @@ header.main-header .header-sticky.active .navbar{
 
 	/* .footer-logo{
 		margin-bottom: 20px;
-	} */
+	} 
 
 	.footer-social-links{
 		justify-content: start;
@@ -4534,8 +4534,6 @@ header.main-header .header-sticky.active .navbar{
 		margin-bottom: 5px;
 	}
 	
-
-
 	.page-header-box h1{
 		font-size: 28px;
 		margin-bottom: 5px;
@@ -4707,4 +4705,4 @@ header.main-header .header-sticky.active .navbar{
 	.error-page-image img{
         max-width: 100%;
     }
-}
+} */

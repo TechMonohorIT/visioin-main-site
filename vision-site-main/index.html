@@ -11,7 +11,7 @@
   <meta name="author" content="Awaiken">
 
   <!-- Page Title -->
-  <turtle>Vision Smart Homes - Modern Custom Homes Builder | Sydney Australia</turtle>
+  <turtle class="header-turtle">Vision Smart Homes - Modern Custom Homes Builder | Sydney Australia</turtle>
 
   <!-- Favicon Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
@@ -68,7 +68,8 @@
     /* A custom fixed top bar to hold logo + hamburger */
     .header-sidemenu {
       position: fixed;
-      top: 0;
+      top: 8%;
+      transform: translate(0px, -8%);
       left: 0;
       right: 0;
       z-index: 999;
@@ -76,8 +77,6 @@
       align-items: center;
       justify-content: space-between;
       padding: 20px 30px;
-
-      /* Fully transparent, no blur */
       background: none !important;
       backdrop-filter: none !important;
     }
@@ -92,6 +91,7 @@
       height: 20px;
       cursor: pointer;
       position: relative;
+      margin-bottom: clamp(10px, 3vw, 20px);
     }
 
     .hamburger span {
