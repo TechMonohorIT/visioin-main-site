@@ -1,7 +1,7 @@
 /************************************/
-/***     06. Header   ***************/
+/***     01. Header   ***************/
 /************************************/
-.header-turtle{
+.header-turtle {
   font-size: clamp(0.8rem, 2vw, 1rem);
   color: red;
   display: flex;
@@ -18,6 +18,7 @@
   background-color: red !important;
   width: 100% !important;
 }
+
 .why-choose-section-1 {
   /* padding: 40px 80px; */
   background-image: url("/images/LIGHT_SHADE_2.png");
@@ -25,6 +26,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .why-choose-section-2 {
   height: 100%;
   /* background-color:red; */
@@ -33,9 +35,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .inner-content {
   height: 100%;
 }
+
 .custom-why-choose-us {
   padding-top: 20px !important;
   position: relative;
@@ -62,10 +66,12 @@
   /* background-position: left top, right top; */
   /* Prevent the images from repeating */
   background-repeat: no-repeat, no-repeat;
-  filter: blur(1px); /* Adjust the blur radius as needed */
+  filter: blur(1px);
+  /* Adjust the blur radius as needed */
   /* Prevents visible edges from the blur */
   z-index: -2;
 }
+
 .custom-why-choose-us::after {
   content: "";
   position: absolute;
@@ -74,7 +80,8 @@
   width: 100%;
   height: 100%;
   background-color: #000000;
-  opacity: 0.1; /* Adjust opacity to control color intensity */
+  opacity: 0.1;
+  /* Adjust opacity to control color intensity */
   z-index: -1;
   inset: 0;
 }
@@ -86,10 +93,12 @@
   background-color: red;
   position: relative;
 }
+
 .why-choose-img-box-1 {
   display: flex;
   justify-content: center;
 }
+
 .why-choose-img-box-2 {
   position: absolute;
   top: 0;
@@ -99,15 +108,18 @@
 .why-images-1 {
   position: relative;
 }
+
 .why-images-2 {
   position: absolute;
   top: 10;
   left: 50;
   right: 50;
 }
+
 .our-project-user {
   position: relative;
-  overflow: hidden; /* Ensure pseudo-elements don’t extend outside */
+  overflow: hidden;
+  /* Ensure pseudo-elements don’t extend outside */
 }
 
 /* Blurred background image */
@@ -122,8 +134,10 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  filter: blur(1px); /* Adjust the blur radius as needed */
-  transform: scale(1.1); /* Prevents visible edges from the blur */
+  filter: blur(1px);
+  /* Adjust the blur radius as needed */
+  transform: scale(1.1);
+  /* Prevents visible edges from the blur */
   z-index: -2;
 }
 
@@ -136,7 +150,8 @@
   width: 100%;
   height: 100%;
   background-color: #53473d;
-  opacity: 0.9; /* Adjust opacity to control color intensity */
+  opacity: 0.9;
+  /* Adjust opacity to control color intensity */
   z-index: -1;
   inset: 0;
 }
@@ -293,18 +308,27 @@
   width: calc(100% - 80px);
 }
 
+.section-title h3.no-before::before {
+  content: none;
+}
+
+h3.no-before {
+  color: rgb(125, 112, 98) !important;
+  padding-left: 0px;
+}
+
 .why-choose-item-content h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 8px;
-  font-weight: 600;
-  color: #8b5e3b !important;
+  font-weight: 700;
+  color: #796f65 !important;
 }
 
 .why-choose-us p {
   color: var(--primary-color);
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: clamp(14px, 2vw, 16px);
   font-family: var(--body-font);
   letter-spacing: 1px;
 }
@@ -317,9 +341,9 @@
 }
 
 .why-choose-img-box {
-  display: relative !important;
-
-  width: 100%;
+  position: relative;
+  width: 550px;
+  height: 434px;
 }
 
 .why-choose-img-1 figure,
@@ -328,22 +352,15 @@
 }
 
 .why-choose-img-1 {
-  z-index: 10;
-  position: absolute;
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  left: 50%; /* Optional if you also want to center horizontally */
-  transform: translate(-50%, -50%);
-
-  border: 2px solid white;
-  top: 40px;
+  width: 430px;
+  height: 640px;
 }
 
 .why-container {
   background: white;
   position: relative;
 }
+
 .why-choose-img-1 img {
   width: 100%;
   aspect-ratio: 1 / 0.756;
@@ -352,9 +369,11 @@
 }
 
 .why-choose-img-2 {
+  /* style="width: 550px; height:434px; object-fit: contain;" */
   /* opacity: 0.8 !important; */
   position: relative;
 }
+
 .why-choose-img-2::after {
   content: "";
   position: absolute;
@@ -362,10 +381,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #513f35; /* Adjust the opacity as needed */
+  background-color: #513f35;
+  /* Adjust the opacity as needed */
   opacity: 0.9;
   filter: blur(1px);
 }
+
 .why-choose-img-2 img {
   height: 25rem;
 }
@@ -375,18 +396,16 @@
   aspect-ratio: 1 / 1.01;
   object-fit: cover;
 }
-.why-choose-content .section-title h2,
-.why-choose-content .section-title span {
-  font-size: 2.5rem !important;
-  color: #8b5e3b !important;
+
+.why-choose-content .section-title h2 {
+  color: #7d7062 !important;
+  font-size: 32px;
 }
+
 .section-title p {
   color: var(--primary-color);
 }
-.experience-p {
-  color: #8b5e3b !important;
-  margin-bottom: 1.5rem !important;
-}
+
 
 /************************************/
 /***     07. Our Services css     ***/
@@ -400,6 +419,7 @@
   margin-left: 0px;
   padding-left: 0px;
 }
+
 .our-services .section-title h3 {
   font-family: "Carmen Sans", sans-serif;
   display: inline-block;
@@ -412,8 +432,8 @@
   text-transform: capitalize;
   color: var(--accent-color);
 }
-.our-services .section-title h2,
-.our-services .section-title span {
+
+.our-services .section-title h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -421,13 +441,18 @@
   text-transform: capitalize;
   color: #8b5e3b !important;
 }
+
 .our-services .section-title-content {
   margin-left: 110px;
 }
+
 .our-services .section-title-content p {
   margin: 0;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
+
 .service-item {
   position: relative;
   height: calc(100% - 30px);
@@ -475,9 +500,9 @@
   text-align: center;
   margin-top: 20px;
 }
+
 .services-image-section {
-  background: url("/vision-site-main/images/photorealistic-timber-house-interior-with-wooden-decor-furnishings\ \(2\).jpg")
-    no-repeat bottom;
+  background: url("/vision-site-main/images/photorealistic-timber-house-interior-with-wooden-decor-furnishings\ \(2\).jpg") no-repeat bottom;
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -497,9 +522,11 @@
   height: 600px;
   border-left: 5px solid var(--divider-color);
 }
+
 .service-box h3 {
   margin-bottom: 100px;
 }
+
 .service-box a {
   text-decoration: none;
   color: var(--white-color);
@@ -524,6 +551,7 @@
 
   opacity: 1.5;
 }
+
 .our-project-hero {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -531,22 +559,26 @@
   padding-right: 32px;
   padding-left: 32px;
 }
+
 .our-project-heading h2 {
   color: var(--white-color);
   font-size: 2rem;
 }
+
 .our-project-heading h3 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.6em;
   color: var(--white-color);
 }
+
 .our-project-heading h2 {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: -0.02em;
   margin-bottom: 0;
 }
+
 .our-project-content p {
   color: var(--white-color);
   font-size: clamp(6px, 5vw, 16px);
@@ -554,6 +586,7 @@
   width: 500px;
   height: 200px;
 }
+
 .vision {
   background: var(--white-color);
   color: #8b5e3b !important;
@@ -564,11 +597,13 @@
   margin-top: 7rem;
   gap: 15px;
 }
+
 .vision h3 {
   color: #8b5e3b !important;
   font-size: clamp(0.5rem, 5vw, 1.5rem);
   font-weight: 600;
 }
+
 .vision-1,
 .vision-2,
 .vision-3,
@@ -577,6 +612,7 @@
   text-align: center;
   height: 15vw;
 }
+
 .vision-1 img,
 .vision-2 img,
 .vision-3 img,
@@ -584,6 +620,7 @@
   border: 2px solid red;
   border-radius: 50%;
 }
+
 .vision-1 p,
 .vision-2 p,
 .vision-3 p,
@@ -591,6 +628,7 @@
   text-align: left;
   margin-top: 1rem;
 }
+
 .vision-1 h3,
 .vision-2 h3,
 .vision-3 h3,
@@ -609,6 +647,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .main-footer-user::before {
   content: "";
   position: absolute;
@@ -620,10 +659,13 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(1px); /* Adjust the blur radius as needed */
-  transform: scale(1.1); /* Prevents visible edges from the blur */
+  filter: blur(1px);
+  /* Adjust the blur radius as needed */
+  transform: scale(1.1);
+  /* Prevents visible edges from the blur */
   z-index: -2;
 }
+
 .main-footer-user::after {
   content: "";
   position: absolute;
@@ -632,18 +674,20 @@
   width: 100%;
   height: 100%;
   background-color: #6e5f51;
-  opacity: 0.9; /* Adjust opacity to control color intensity */
+  opacity: 0.9;
+  /* Adjust opacity to control color intensity */
   z-index: -1;
   inset: 0;
 }
-.copyright-home-footer{
-	text-align: center;
+
+.copyright-home-footer {
+  text-align: center;
   padding-top: 30px;
   font-size: 1rem;
 }
 
-.copyright-home-footer p{
-	color: var(--white-color);
+.copyright-home-footer p {
+  color: var(--white-color);
 }
 
 
@@ -651,15 +695,29 @@
 /*************************************/
 /***9.MOBILE  RESPONSIVE WEB DESIGN ***/
 /*************************************/
-@media only screen and (max-width: 600px) {
- 
+@media only screen and (max-width: 767px) {
+  .our-services .section-title-content p {
+    margin-left: -106px !important;
+  }
+
+  .services-image-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(20%) sepia(36%) hue-rotate(202deg);
+  }
+
+  .service-box {
+    height: 100%;
+    border-top: 5px solid var(--divider-color);
+  }
 }
 
 /*************************************/
-/***.Tablet  RESPONSIVE WEB DESIGN ***/
+/***.Tablet, Laptop RESPONSIVE WEB DESIGN ***/
 /*************************************/
-@media only screen and (max-width: 768px) {
-
-}
-
-
+/* @media only screen and (max-width: 991px) {};  */

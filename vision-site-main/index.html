@@ -76,7 +76,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 30px;
+      padding: 20px calc(2.5% - 1.5px);
       background: none !important;
       backdrop-filter: none !important;
     }
@@ -91,7 +91,7 @@
       height: 20px;
       cursor: pointer;
       position: relative;
-      margin-bottom: clamp(10px, 3vw, 20px);
+      margin-bottom: clamp(20px, 3vw, 22px);
     }
 
     .hamburger span {
@@ -227,24 +227,12 @@
       font-size: 2rem;
       font-weight: 700;
       text-transform: capitalize;
-      color: #776558 !important;
-    }
-
-    .our-services .section-title span {
-      color: #776558 !important;
-      margin-bottom: 20px;
     }
 
     .our-services .section-title-content {
       margin-left: 110px;
     }
 
-    .our-services .section-title-content p {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.6;
-    }
 
     .service-btn {
       position: absolute;
@@ -281,19 +269,6 @@
     .all-services-btn {
       text-align: center;
       margin-top: 20px;
-    }
-
-    .services-image-section {
-      position: relative;
-      background: url(/images/photorealistic.jpg) no-repeat bottom;
-      background-size: cover;
-      width: 100%;
-      height: 500px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-bottom: 50px;
-      margin-top: 2rem;
     }
 
     .services-image-section::before {
@@ -904,9 +879,9 @@
       <li><a href="./">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      < li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
 
@@ -1032,13 +1007,12 @@
         <div class="col-lg-6 ">
           <div style="padding-right: 20px; padding-bottom: 66px;" class="why-choose-content ">
             <div class="section-title">
-              <p style="color: #7d7062!important;" class="experience-p">Experience the Vision difference</p>
-              <h2 class="text-anime-style-2"
-                style="color: #7d7062!important; font-size: 32px!important; font-weight: 500!important;">
+              <h3 class="no-before wow fadeInUp">Experience the Vision difference
+              </h3>
+              <h2 class="text-anime-style-2">
                 INSIDE OUR EXCLUSIVE
                 <br />
-                <span class="design-span"
-                  style="color: #7d7062!important; font-size: 32px!important; font-weight: 500!important;">DESIGN
+                <span class="design-span">DESIGN
                   ATELIER</span>
               </h2>
             </div>
@@ -1048,7 +1022,7 @@
                   <img src="images/icon-why-choose-1.svg" alt="">
                 </div>
                 <div class="why-choose-item-content" style="padding-top: 10px!important">
-                  <h3 style="color: #796f65!important; font-size: 24px!important; font-weight: 700!important;">Exquisite
+                  <h3>Exquisite
                     Tailored Home Designs</h3>
                   <p style="color:#969696!important;">We craft distinguished, tailor-made home designs that embody your
                     individuality and lifestyle, curating spaces of timeless luxury and refined elegance.</p>
@@ -1059,9 +1033,9 @@
                   <img src="images/icon-why-choose-2.svg" alt="">
                 </div>
                 <div class="why-choose-item-content" style="padding-top: 10px!important">
-                  <h3 style="color: #796f65!important; font-size: 24px!important; font-weight: 700!important;">Seamless
+                  <h3>Seamless
                     Project Management</h3>
-                  <p style="color:#969696!important;">We manage every aspect of the design process, from inception to
+                  <p>We manage every aspect of the design process, from inception to
                     realization, delivering impeccable results with precision and finesse.</p>
                 </div>
               </div>
@@ -1070,9 +1044,9 @@
                   <img src="images/icon-why-choose-3.svg" alt="">
                 </div>
                 <div style="padding-top: 10px!important" class="why-choose-item-content">
-                  <h3 style="color: #796f65!important; font-size: 24px!important; font-weight: 700!important;">Customer
+                  <h3>Customer
                     at heart</h3>
-                  <p style="color:#969696!important;">Your vision remains at the heart of every step, with your input
+                  <p>Your vision remains at the heart of every step, with your input
                     meticulously woven into the process to create a masterpiece tailored exclusively for you.</p>
                 </div>
               </div>
@@ -1082,17 +1056,15 @@
         <div class="col-lg-6 ">
           <!-- class="why-choose-images" -->
           <div class="">
-            <div style="position: relative; width: 550px; height:434px;" class="why-choose-img-box">
-              <div style="width: 430px; height:640px; " class="why-choose-img-1">
-                <figure style="width: 100%; height: 100%;" class="image-anime reveal">
-                  <img style="width: 100%; height: 100%; object-fit: cover;"
-                    src="images/house-with-glass-wall-patio-with-sunlit-patio.jpg" alt="">
+            <div class="why-choose-img-box">
+              <div class="why-choose-img-1">
+                <figure class="image-anime reveal">
+                  <img src="images/house-with-glass-wall-patio-with-sunlit-patio.jpg" alt="">
                 </figure>
               </div>
-              <div style="width: 550px; height:434px; object-fit: contain;" class="why-choose-img-2">
+              <div class="why-choose-img-2">
                 <figure class="image-anime reveal">
-                  <img style="width: 550px; height:434px; object-fit: fill"
-                    src="images/ai-generated-modern-styled-entryway.jpg" alt="">
+                  <img src="images/ai-generated-modern-styled-entryway.jpg" alt="">
                 </figure>
               </div>
             </div>
