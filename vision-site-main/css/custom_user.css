@@ -703,11 +703,33 @@ h3.no-before {
   color: var(--white-color);
 }
 
-/* Our skill content */
+/* our skill    */
 .our-skill-container {
   display: flex;
-  max-width: 1350px;
-  gap: 40px;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.our-skill-content,
+.our-skill-img-1 {
+  flex: 1;
+}
+
+.our-skill-img-1 {
+  display: flex;
+}
+
+.our-skill-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left 25% bottom 1%;
+  display: block;
+}
+
+.our-skill-content {
+  padding-top: 50px;
+  padding-bottom: 115px;
 }
 
 /*************************************/
@@ -755,7 +777,9 @@ h3.no-before {
 
   /* our skill section */
   .our-skill-container {
+    display: grid;
     grid-template-columns: 100% !important;
+    grid-gap: 5px;
   }
 }
 
@@ -798,8 +822,8 @@ h3.no-before {
   }
 
   /* our skills */
-  .our-skill-container {
+  /* .our-skill-container {
     display: grid;
     grid-template-columns: 50% 50%;
-  }
+  } */
 }
