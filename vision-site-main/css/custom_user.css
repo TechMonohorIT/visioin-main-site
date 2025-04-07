@@ -437,6 +437,7 @@ h3.no-before {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 20px;
+  white-space: normal;
   line-height: 1.6em;
   text-transform: capitalize;
   color: #8b5e3b !important;
@@ -502,16 +503,28 @@ h3.no-before {
 }
 
 .services-image-section {
-  background: url("/vision-site-main/images/photorealistic-timber-house-interior-with-wooden-decor-furnishings\ \(2\).jpg") no-repeat bottom;
+  background: url("/vision-site-main/images/photorealistic-timber-house-interior-with-wooden-decor-furnishings\ \(2\).jpg") no-repeat;
+  background-position: left bottom 1px;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
   margin-top: 2rem;
-  /* filter: grayscale(20%) sepia(36%) hue-rotate(202deg);*/
+  position: relative;
+  z-index: 1;
+}
+
+.services-image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(103, 61, 36, 0.5);
 }
 
 .service-box {
@@ -519,8 +532,11 @@ h3.no-before {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 600px;
-  border-left: 5px solid var(--divider-color);
+  height: 550px;
+}
+
+.service-box:not(:last-child) {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .service-box h3 {
@@ -528,7 +544,6 @@ h3.no-before {
 }
 
 .service-box a {
-  text-decoration: none;
   color: var(--white-color);
   font-family: var(--default-font);
   font-size: 2.5rem;
@@ -702,17 +717,14 @@ h3.no-before {
 
   .services-image-section {
     position: relative;
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    filter: grayscale(20%) sepia(36%) hue-rotate(202deg);
   }
 
   .service-box {
-    height: 100%;
+    height: 400px;
     border-top: 5px solid var(--divider-color);
   }
 }
@@ -720,4 +732,17 @@ h3.no-before {
 /*************************************/
 /***.Tablet, Laptop RESPONSIVE WEB DESIGN ***/
 /*************************************/
-/* @media only screen and (max-width: 991px) {};  */
+@media only screen and (max-width: 991px) {
+  .our-services .section-title-content p {
+    margin-left: -106px;
+  }
+
+  .services-image-section {
+    height: 420px !important;
+    background-position: bottom 1px left 1px;
+  }
+
+  .service-box {
+    font-size: 1rem;
+  }
+}
