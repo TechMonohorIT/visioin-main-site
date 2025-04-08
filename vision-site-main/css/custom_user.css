@@ -732,6 +732,193 @@ h3.no-before {
   padding-bottom: 115px;
 }
 
+/************************************/
+/***   12. Our Testimonials css   ***/
+/************************************/
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.testimonial-left-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #8b5e3b;
+  position: relative;
+}
+
+.left-box-1 {
+  background-color: #766458;
+}
+
+.left-box-2 {
+  background-color: #f3f3f3;
+  border: 2px solid green;
+}
+
+.testimonial-left-box::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  z-index: 210;
+  border: 2px solid red;
+  border-radius: 50%;
+  background: #ffffff;
+  background-image: url("/vision-site-main/images/vision\ logo\ 01-01.svg");
+  background-size: cover;
+  /* or contain */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-testimonial-content {
+  width: 100%;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.testimonial-slider {
+  width: 100%;
+  max-width: 620px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.testimonial-slider .swiper-wrapper {
+  cursor: none;
+}
+
+.testimonial-rating {
+  margin-bottom: 20px;
+}
+
+.testimonial-rating i {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-right: 2px;
+}
+
+.testimonial-rating i:last-child {
+  margin-right: 0;
+}
+
+.testimonial-content {
+  margin-bottom: 40px;
+}
+
+.testimonial-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #7b695f;
+  margin-bottom: 15px;
+}
+
+.testimonial-title h3 {
+  font-size: 1rem;
+  color: #928e8b;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.testimonial-title p {
+  font-size: 1rem;
+  color: #908b87;
+  margin: 15px 0px 40px 0px;
+  line-height: 1.6;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: #706c6b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.testimonial-body {
+  display: flex;
+}
+
+.testimonial-body .author-image {
+  margin-right: 15px;
+}
+
+.testimonial-body .author-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ebae44;
+}
+
+.testimonial-body .author-content {
+  width: calc(100% - 75px);
+  margin-top: 5px;
+}
+
+.testimonial-body .author-content h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #78736f;
+  margin-bottom: 0;
+}
+
+.testimonial-body .author-content p {
+  text-transform: capitalize;
+  margin: 0;
+  color: #6a6562;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.testimonial-rating-counter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-rating-counter .rating-counter h2 {
+  font-size: 58px;
+  color: #786a5f;
+  font-weight: 400;
+}
+
+.testimonial-client-rating {
+  display: inline-block;
+  background: #77665f;
+  padding: 3px 5px 5px 5px;
+  line-height: 1em;
+}
+
+.testimonial-client-rating i {
+  font-size: 10px;
+  color: var(--white-color);
+}
+
+.testimonial-rating-content p {
+  font-size: 1rem;
+  color: #7c7875;
+  font-weight: 500;
+  margin: 0;
+}
+
+.testimonial-rating i {
+  color: #e7ae3d;
+  font-size: 18px;
+}
+
+.image-anime p {
+  width: 60px;
+  height: 60px;
+  background: #ebae44;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 /*************************************/
 /***9.MOBILE  RESPONSIVE WEB DESIGN ***/
 /*************************************/
@@ -781,6 +968,22 @@ h3.no-before {
     grid-template-columns: 100% !important;
     grid-gap: 5px;
   }
+
+  /* testimonial*/
+  .testimonials-container {
+    grid-template-columns: 100% !important;
+    padding: 15px;
+  }
+
+  .left-box-2 {
+    background-color: #b8b0ac;
+    height: 270px;
+  }
+
+  .testimonial-left-box::before {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 /*************************************/
@@ -826,4 +1029,5 @@ h3.no-before {
     display: grid;
     grid-template-columns: 50% 50%;
   } */
+
 }

@@ -540,195 +540,6 @@
     /************/
     /*   5. OUR TESTIMONIALS **/
     /************/
-    .testimonial-container {
-      display: flex;
-    }
-
-    .testimonial-left-box {
-      display: flex;
-      position: relative;
-    }
-
-    .testimonial-left-box::before {
-      content: "";
-      width: 250px;
-      height: 250px;
-      background-color: #ffffff !important;
-      border-radius: 100%;
-      background: url('/images/icon_without_text.svg') no-repeat center center;
-      background-size: contain;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-    }
-
-    .left-box-1 {
-      width: 50%;
-      background-color: #776559;
-      position: relative;
-    }
-
-    .left-box-1::before {
-      content: "";
-      width: 1px;
-      height: 100%;
-      background-color: #a2d9d4;
-      position: absolute;
-      left: 15%;
-      transform: translateX(-15%);
-      z-index: 2;
-    }
-
-    .left-box-2 {
-      width: 50%;
-      background-color: #f3f3f3;
-    }
-
-    .our-testimonial-content {
-      width: 98%;
-      padding-right: 60px;
-      padding-top: 60px;
-      padding-bottom: 100px;
-    }
-
-    .testimonial-slider {
-      width: 100%;
-      max-width: 620px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid var(--divider-color);
-    }
-
-    .testimonial-slider .swiper-wrapper {
-      cursor: none;
-    }
-
-    .testimonial-rating {
-      margin-bottom: 20px;
-    }
-
-    .testimonial-rating i {
-      font-size: 18px;
-      color: var(--primary-color);
-      margin-right: 2px;
-    }
-
-    .testimonial-rating i:last-child {
-      margin-right: 0;
-    }
-
-    .testimonial-content {
-      margin-bottom: 40px;
-    }
-
-    .testimonial-title h2 {
-      font-size: 32px;
-      font-weight: bold;
-      color: #7b695f;
-      margin-bottom: 15px;
-    }
-
-    .testimonial-title h3 {
-      font-size: 1rem;
-      color: #928e8b;
-      margin-bottom: 15px;
-      font-weight: 400;
-    }
-
-    .testimonial-title p {
-      font-size: 1rem;
-      color: #908b87;
-      margin: 15px 0px 40px 0px;
-      line-height: 1.6;
-    }
-
-    .testimonial-content p {
-      font-size: 1rem;
-      color: #706c6b;
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    .testimonial-body {
-      display: flex;
-    }
-
-    .testimonial-body .author-image {
-      margin-right: 15px;
-    }
-
-    .testimonial-body .author-image img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #ebae44;
-    }
-
-    .testimonial-body .author-content {
-      width: calc(100% - 75px);
-      margin-top: 5px;
-    }
-
-    .testimonial-body .author-content h3 {
-      font-size: 20px;
-      text-transform: capitalize;
-      color: #78736f;
-      margin-bottom: 0;
-    }
-
-    .testimonial-body .author-content p {
-      text-transform: capitalize;
-      margin: 0;
-      color: #6a6562;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-
-    .testimonial-rating-counter {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .testimonial-rating-counter .rating-counter h2 {
-      font-size: 58px;
-      color: #786a5f;
-      font-weight: 400;
-    }
-
-    .testimonial-client-rating {
-      display: inline-block;
-      background: #77665f;
-      padding: 3px 5px 5px 5px;
-      line-height: 1em;
-    }
-
-    .testimonial-client-rating i {
-      font-size: 10px;
-      color: var(--white-color);
-    }
-
-    .testimonial-rating-content p {
-      font-size: 1rem;
-      color: #7c7875;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .testimonial-rating i {
-      color: #e7ae3d;
-      font-size: 18px;
-    }
-
-    .image-anime p {
-      width: 60px;
-      height: 60px;
-      background: #ebae44;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
   </style>
 </head>
 
@@ -1290,117 +1101,106 @@
   </div>
   <!-- Our Skill End -->
 
-  <!-- Our Testimonial Start -->
-
 
   <!-- Our Testimonial Start -->
-  <div class="our-testimonials">
-    <div>
-      <div class="testimonial-container">
-        <div class="testimonial-left-box">
-          <div class="left-box-1"></div>
-          <div class="left-box-2"></div>
-        </div>
-        <div class="col-lg-6 ">
-          <div style="background: #f3f3f3 !important;" class="our-testimonial-content">
-            <div class="testimonial-title">
-              <h3 class="wow fadeInUp">our skills</h3>
-              <h2 class="text-anime-style-2" data-cursor="-opaque">
-                MASTERY IN CRAFTING YOUR DREAM HOME
-              </h2>
-              <p>Our accomplished design team orchestrates every element of your home with precision, transforming your
-                aspirations into a breathtaking living experience defined by grandeur and exclusivity.</p>
-            </div>
-            <div class="testimonial-slider">
-              <div class="swiper">
-                <div class="swiper-wrapper" data-cursor-text="Drag">
-                  <!-- Slide 1 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="testimonial-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <div class="testimonial-body">
-                        <div class="testimonial-content">
-                          <p>
-                            I couldn't be happier with the transformation of my home! From our very first consultation,
-                            the team took the time to understand my vision and preferences.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="testimonial-body">
-                        <div class="author-image">
-                          <figure class="image-anime">
-                            <p></p>
-                          </figure>
-                        </div>
-                        <div class="author-content">
-                          <h3>arlene mcCoy</h3>
-                          <p>co. founder</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slide 2 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="testimonial-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <div class="testimonial-content">
-                        <p>
-                          I couldn't be happier with the transformation of my home! From our very first consultation,
-                          the team took the time to understand my vision and preferences.
-                        </p>
-                      </div>
-                      <div class="testimonial-body">
-                        <div class="author-image">
-                          <figure class="image-anime">
-                            <p></p>
-                          </figure>
-                        </div>
-                        <div class="author-content">
-                          <h3>arlene mcCoy</h3>
-                          <p>co founder</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- add more slides if needed -->
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-rating-counter">
-              <div class="rating-counter">
-                <h2><span class="counter">4.82</span></h2>
-              </div>
-              <div class="testimonial-rating-content">
-                <div class="testimonial-client-rating">
+  <div class="testimonials-container">
+    <div class="testimonial-left-box">
+      <div class="left-box-1"></div>
+      <div class="left-box-2"></div>
+    </div>
+    <div class="our-testimonial-content">
+      <div class="testimonial-title">
+        <h3 class="wow fadeInUp">our skills</h3>
+        <h2 class="text-anime-style-2" data-cursor="-opaque">
+          MASTERY IN CRAFTING YOUR DREAM HOME
+        </h2>
+        <p>Our accomplished design team orchestrates every element of your home with precision, transforming your
+          aspirations into a breathtaking living experience defined by grandeur and exclusivity.</p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper" data-cursor-text="Drag">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="testimonial-rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                 </div>
-                <p>2,488 reviews</p>
+                <div class="testimonial-body">
+                  <div class="testimonial-content">
+                    <p>
+                      I couldn't be happier with the transformation of my home! From our very first consultation,
+                      the team took the time to understand my vision and preferences.
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <div class="author-image">
+                    <figure class="image-anime">
+                      <p></p>
+                    </figure>
+                  </div>
+                  <div class="author-content">
+                    <h3>arlene mcCoy</h3>
+                    <p>co. founder</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="testimonial-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    I couldn't be happier with the transformation of my home! From our very first consultation,
+                    the team took the time to understand my vision and preferences.
+                  </p>
+                </div>
+                <div class="testimonial-body">
+                  <div class="author-image">
+                    <figure class="image-anime">
+                      <p></p>
+                    </figure>
+                  </div>
+                  <div class="author-content">
+                    <h3>arlene mcCoy</h3>
+                    <p>co founder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- add more slides if needed -->
           </div>
+        </div>
+      </div>
+      <div class="testimonial-rating-counter">
+        <div class="rating-counter">
+          <h2><span class="counter">4.82</span></h2>
+        </div>
+        <div class="testimonial-rating-content">
+          <div class="testimonial-client-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>2,488 reviews</p>
         </div>
       </div>
     </div>
   </div>
-
-
-
   <!-- Our Blog Section Start -->
   <div class="our-blog">
     <div class="container">

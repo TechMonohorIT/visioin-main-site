@@ -1746,30 +1746,6 @@ header.main-header .header-sticky.active .navbar {
 /***   12. Our Testimonials css   ***/
 /************************************/
 
-.our-testimonials {
-	background: var(--secondery-color);
-}
-
-.our-testimonials .container-fluid {
-	padding: 0;
-}
-
-.our-testimonials-image {
-	height: 100%;
-}
-
-.our-testimonials-image figure,
-.our-testimonials-image figure img {
-	width: 100%;
-	height: 100%;
-	aspect-ratio: 1 / 0.82;
-	object-fit: cover;
-}
-
-.our-testimonial-content {
-	padding: 100px;
-}
-
 .our-testimonial-content .section-title {
 	background: url('../images/testimonial-quote.svg') no-repeat;
 	background-position: top right;
@@ -3630,12 +3606,7 @@ header.main-header .header-sticky.active .navbar {
 /***      26. Responsive css      ***/
 /************************************/
 
-@media only screen and (max-width: 1366px) {
-
-	.our-testimonial-content {
-		padding: 100px 50px;
-	}
-}
+@media only screen and (max-width: 1366px) {}
 
 @media only screen and (max-width: 1024px) {
 
@@ -3856,8 +3827,6 @@ header.main-header .header-sticky.active .navbar {
 	.skills-progress-bar {
 		margin-bottom: 30px;
 	}
-
-
 
 	.our-testimonials-image {
 		height: auto;
