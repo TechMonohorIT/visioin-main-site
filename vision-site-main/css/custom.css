@@ -304,7 +304,7 @@ body {
 	padding-left: 0px;
 }
 
-.btn-default {
+/* .btn-default {
 	position: relative;
 	display: inline-block;
 	background: var(--accent-color);
@@ -318,14 +318,14 @@ body {
 	transition: all 0.5s ease-in-out;
 	overflow: hidden;
 	z-index: 0;
-}
+} */
 
 .btn-default:hover {
 	background: transparent;
 	color: var(--white-color);
 }
 
-.btn-default::before {
+/* .btn-default::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -338,7 +338,7 @@ body {
 	background-size: cover;
 	transform: translate(-20px, -50%);
 	transition: all 0.4s ease-in-out;
-}
+} */
 
 .btn-default:hover::before {
 	transform: translate(-18px, -50%);
@@ -366,10 +366,10 @@ body {
 	left: 0;
 }
 
-.btn-default.btn-highlighted {
+/* .btn-default.btn-highlighted {
 	background-color: var(--white-color);
 	color: var(--accent-color);
-}
+} */
 
 .btn-default.btn-highlighted:hover {
 	color: var(--white-color);
@@ -813,7 +813,7 @@ header.main-header .header-sticky.active .navbar {
 /***        04. Hero css	      ***/
 /************************************/
 
-.hero {
+/* .hero {
 	position: relative;
 	background: url('../images/hero-bg.jpg');
 	background-repeat: no-repeat;
@@ -822,7 +822,7 @@ header.main-header .header-sticky.active .navbar {
 	padding: 450px 0 120px;
 	min-height: auto;
 	margin-top: -118px;
-}
+} */
 
 .hero::before {
 	content: '';
@@ -918,11 +918,11 @@ header.main-header .header-sticky.active .navbar {
 	z-index: 2;
 }
 
-.hero-content .section-title h3,
+/* .hero-content .section-title h3,
 .hero-content .section-title h1 {
 	color: var(--white-color);
 	font-size: 28px
-}
+} */
 
 .hero-content .section-title p {
 	font-size: 16px;
@@ -935,9 +935,9 @@ header.main-header .header-sticky.active .navbar {
 	filter: brightness(0) invert(1);
 }
 
-.hero-content .btn-default.btn-highlighted {
+/* .hero-content .btn-default.btn-highlighted {
 	margin-left: 30px;
-}
+} */
 
 /************************************/
 /***       05. About Us css 	  ***/

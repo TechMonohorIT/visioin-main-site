@@ -10,6 +10,110 @@
   color: #000000;
 }
 
+.header-sidemenu .logo img {
+  width: 150px;
+  height: auto;
+  /* for instance, if you know the height you want */
+  object-fit: cover;
+  /* ensures the image doesn't distort, 
+  though it may crop if aspect ratio is different */
+}
+
+.logo {
+  position: absolute;
+  left: 42%;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 100%;
+  margin-bottom: 16px;
+}
+
+/* **********************************
+/***        02. Hero css	      ***/
+/************************************/
+.hero {
+  position: relative;
+  background: url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 250px 0 120px;
+  min-height: auto;
+  margin-top: -118px;
+}
+
+.hero-content {
+  width: 500px;
+  border: 2px dotted #faeddc;
+}
+
+.hero-content .section-title h3,
+.hero-content .section-title h1 {
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+  text-transform: capitalize !important;
+  padding: 20px 81px 20px 15px;
+}
+
+.hero-content .section-title p {
+  font-size: 1rem;
+  color: #fefeff;
+  padding: 0px 15px 35px 15px;
+  margin-bottom: 0px;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.btn-default {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: #dccfc6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1em;
+  text-transform: uppercase;
+  border: none;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: -10px 10px 15px rgba(255, 255, 255, 0.1);
+}
+
+.hero-btn {
+  padding-left: 10px;
+  padding-bottom: 15px;
+  display: flex;
+  gap: 25px;
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+  padding: 4px 5px 4px 7px;
+  color: #c49a6c;
+  background: #fefefe;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.hero-content .btn-default.btn-highlighted {
+  margin-left: 0px;
+}
 
 /************************************/
 /***     06. Why Choose Us css    ***/
@@ -930,6 +1034,25 @@ h3.no-before {
 /***9.MOBILE  RESPONSIVE WEB DESIGN ***/
 /*************************************/
 @media only screen and (max-width: 767px) {
+
+  /* header section */
+  .header-sidemenu {
+    position: fixed;
+    top: 11%;
+    transform: translate(0px, -11%);
+    left: 0px;
+    padding: 30px 50px 20px 20px;
+  }
+
+  .logo {
+    position: fixed;
+    left: 0px !important;
+  }
+
+  /* .hamburger {
+    left: 85% !important;
+  } */
+
   .our-services .section-title-content p {
     margin-left: -106px !important;
   }
