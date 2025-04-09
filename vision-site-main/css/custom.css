@@ -1584,6 +1584,7 @@ header.main-header .header-sticky.active .navbar {
 	left: 50%;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 	border-radius: 50%;
 	transform: translate(-50%, -30%);
