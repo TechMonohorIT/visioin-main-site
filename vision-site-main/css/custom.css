@@ -3611,9 +3611,9 @@ header.main-header .header-sticky.active .navbar {
 		display: none;
 	}
 
-	.btn-default {
+	/* .btn-default {
 		padding: 14px 42px 14px 16px;
-	}
+	} */
 
 	.section-row {
 		margin-bottom: 40px;
@@ -4240,10 +4240,10 @@ header.main-header .header-sticky.active .navbar {
 		font-size: 18px;
 	}
 
-	.hero-content .btn-default {
+	/* .hero-content .btn-default {
 		margin-right: 40px;
 		margin-bottom: 10px;
-	}
+	} */
 
 	.hero-content .btn-default.btn-highlighted {
 		margin: 0;
