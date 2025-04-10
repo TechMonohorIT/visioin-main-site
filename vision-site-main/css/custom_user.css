@@ -198,6 +198,89 @@
   z-index: -2;
 }
 
+.about-us-cotainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid green;
+}
+
+.about-us-content {
+  border: 2px solid blue;
+}
+
+.about-us-content .section-title h3::before {
+  content: none;
+}
+
+.about-us-content .section-title h3 {
+  padding-left: 0px;
+  margin-bottom: 50px;
+}
+
+.about-us-content .section-title h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #6a5c4e;
+  line-height: 1.6;
+  text-transform: uppercase !important;
+}
+
+.about-us-content .section-title p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #5e5e5e;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  word-spacing: 5px;
+  text-transform: capitalize !important;
+}
+
+.about-us-content-list li {
+  text-transform: capitalize;
+}
+
+.about-us-content-list .fas {
+  font-weight: 900;
+  padding: 4px 5px 4px 7px;
+  color: #fefefe;
+  background: #766257;
+  border-radius: 50%;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.explore-btn-container .fas {
+  font-weight: 900;
+  padding: 3px 5px 3px 7px;
+  color: #fefefe;
+  background: #766257;
+  border-radius: 50%;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.explore-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-content-btn a {
+  display: block;
+  background-color: transparent;
+  color: #a99e97;
+  font-size: 18px;
+  line-height: 1em;
+  text-transform: capitalize;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* why choose us section*/
 .custom-why-choose-us::after {
   content: "";
   position: absolute;
@@ -1178,6 +1261,12 @@ h3.no-before {
     width: 100px !important;
     height: 100px !important;
   }
+
+  .experience-counter {
+    width: 200px;
+    height: 200px;
+    transform: translate(-89%, -16%);
+  }
 }
 
 /*************************************/
@@ -1223,5 +1312,34 @@ h3.no-before {
     display: grid;
     grid-template-columns: 50% 50%;
   } */
-
+  .experience-counter {
+    width: 200px;
+    height: 200px;
+    transform: translate(-89%, -16%);
+  }
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .main-menu ul li {
+    margin: 0;
+  }
+
+  .our-testimonial-content {
+    padding: 50px 20px;
+  }
+
+  .experience-counter {
+    width: 200px;
+    height: 200px;
+    transform: translate(-89%, -16%);
+  }
+
+  .about-img-2 {
+    width: 100%;
+    max-width: 300px;
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {}
