@@ -968,9 +968,11 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .about-img-1 img {
-	width: 100%;
+	width: 90%;
 	object-fit: cover;
-	aspect-ratio: 1 / 0.76;
+	object-position: right -75px top 5px;
+	aspect-ratio: 1 / 0.89;
+	/* scale: 1.1; */
 }
 
 .about-img-2 {
@@ -978,14 +980,15 @@ header.main-header .header-sticky.active .navbar {
 	width: 100%;
 	max-width: 300px;
 	bottom: 0;
-	right: 0;
+	right: calc(10% - 5px);
 }
 
 .about-img-2 img {
 	width: 100%;
 	object-fit: cover;
-	aspect-ratio: 1 / 0.76;
+	aspect-ratio: 1 / 0.89;
 	object-position: right;
+	margin-bottom: 30px;
 }
 
 .experience-counter {
@@ -999,7 +1002,7 @@ header.main-header .header-sticky.active .navbar {
 	background-position: bottom center;
 	background-size: cover;
 	border: 4px solid var(--white-color);
-	transform: translate(-50%, -6px);
+	transform: translate(calc(-50% - 5px), calc(7% - 30px));
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -1037,13 +1040,13 @@ header.main-header .header-sticky.active .navbar {
 .feedback-counter p {
 	font-size: 16px;
 	font-weight: 500;
-	color: var(--white-color);
+	color: #fefefd;
 	height: 60px;
 	width: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--accent-color);
+	background-color: #766458;
 	border-radius: 50%;
 	margin: 0 0 15px 0;
 	transition: all 0.3s ease-in-out;
