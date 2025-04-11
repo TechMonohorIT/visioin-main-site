@@ -949,18 +949,18 @@ header.main-header .header-sticky.active .navbar {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: contain;
-	padding: 100px 0;
+	padding: 100px 100px;
 }
 
 .about-us-images {
 	position: relative;
+	height: 100%;
 	/* background-image: url(../images/about-us-bg-shape.svg);
 	background-repeat: no-repeat;
 	background-position: left 60px bottom 40px;
 	background-size: auto; */
-	padding-right: 100px;
-	padding-bottom: 180px;
-	margin-right: 30px;
+	/* padding-right: 100px;
+	padding-bottom: 180px; */
 	border: 2px solid gold;
 }
 
@@ -970,10 +970,10 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .about-img-1 img {
-	width: 90%;
+	width: 70%;
 	object-fit: cover;
-	object-position: right -75px top 5px;
-	aspect-ratio: 1 / 0.89;
+	object-position: right -75px top 0px;
+	aspect-ratio: 1 / 1.01;
 	/* scale: 1.1; */
 }
 
@@ -981,8 +981,8 @@ header.main-header .header-sticky.active .navbar {
 	position: absolute;
 	width: 100%;
 	max-width: 300px;
-	bottom: 0;
-	right: calc(10% - 5px);
+	bottom: 2%;
+	right: 12%;
 }
 
 .about-img-2 img {
@@ -1004,7 +1004,7 @@ header.main-header .header-sticky.active .navbar {
 	background-position: bottom center;
 	background-size: cover;
 	border: 4px solid var(--white-color);
-	transform: translate(-65%, -16%);
+	transform: translate(-63%, -8%);
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -1033,18 +1033,18 @@ header.main-header .header-sticky.active .navbar {
 	position: absolute;
 	top: 0;
 	right: 0;
-	transform: rotate(-180deg) translate(20px, -20px);
+	transform: rotate(-180deg) translate(86px, -10px);
 	writing-mode: vertical-rl;
 	display: flex;
 	align-items: center;
 }
 
 .feedback-counter p {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	color: #fefefd;
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1089,7 +1089,7 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .about-us-content-list {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .about-us-content-list ul {
@@ -1101,8 +1101,9 @@ header.main-header .header-sticky.active .navbar {
 .about-us-content-list ul li {
 	position: relative;
 	font-weight: 500;
-	color: var(--primary-color);
 	margin-bottom: 15px;
+	font-size: 14px;
+	color: #848484;
 }
 
 .about-us-content-list ul li:last-child {
@@ -1176,13 +1177,13 @@ header.main-header .header-sticky.active .navbar {
 /***     06. Why Choose Us css    ***/
 /************************************/
 
-.why-choose-us {
+/*.why-choose-us {
 	padding: 0 0 !important;
 
 	/* padding: 100px 0; */
-	/* background-color: var(--secondery-color); */
+/* background-color: var(--secondery-color); 
 }
-
+*/
 .why-choose-item {
 	display: flex;
 	/* border-bottom: 1px solid var(--divider-color); */
